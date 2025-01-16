@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom"
+
 function Navbar() {
     return (
         <>
@@ -5,14 +7,17 @@ function Navbar() {
             			   bg-gradient-to-r from-blue-500 to-cyan-500 text-white'>
             
                 <div className="container flex justify-between text-lg">
-                    Blog Pessoal
-
+                   <div className="font-bold uppercase">
+                   <Link to="/home">Blog Pessoal</Link>
+                   </div>
                     <div className='flex gap-4'>
-                        Postagens
-                        Temas
-                        Cadastrar tema
-                        Perfil
-                        Sair
+                      <div className="text-white hover:font-bold">Postagens</div>  
+                      <div className="text-white hover:font-bold">Temas</div> 
+                      <div className="text-white hover:font-bold">Cadastrar tema</div> 
+                      <div className="text-white hover:font-bold">Perfil</div> 
+                      <div className="text-white hover:font-bold">
+                        <Link to="/login"> Sair</Link>
+                      </div>                       
                     </div>
                 </div>
             </div>

@@ -26,12 +26,10 @@ function Navbar() {
                    </div>
                     <div className='flex gap-4'>
                       <div className="text-white hover:font-bold">Postagens</div>  
-                      <div className="text-white hover:font-bold">Temas</div> 
-                      <div className="text-white hover:font-bold">Cadastrar tema</div> 
+                      <Link to='/temas' className='text-white hover:font-bold'>Temas</Link>
+                      <Link to='/cadastrartema' className='text-white hover:font-bold'>Cadastrar tema</Link>
                       <div className="text-white hover:font-bold">Perfil</div> 
-                      <div className="text-white hover:font-bold">
-                        <Link to=" " onClick={logout}> Sair</Link>
-                      </div>                       
+                      <Link to=" " className="text-white hover:font-bold" onClick={logout}> Sair</Link>
                     </div>
                 </div>
             </div>

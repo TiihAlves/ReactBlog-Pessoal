@@ -83,7 +83,7 @@ function Login() {
 
                     <p>
                         Ainda não tem uma conta?{' '}
-                        <span className='rounded text-black hover:text-white
+                        <span className='rounded text-blue-500 hover:text-white
                             hover:bg-gradient-to-r from-blue-500 to-cyan-500'>
                         <Link to="/cadastro"> Cadastre-se</Link>
                         </span>
